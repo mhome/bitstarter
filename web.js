@@ -1,5 +1,4 @@
-//foo
-var buffer = require('Buffer');
+var buffer = require('buffer');
 var fs =  require('fs');
 var express = require('express');
 
