@@ -7,8 +7,10 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   //response.send('Hello World2!');
     var buff = new Buffer(32);
+    var shout = new String();
     buff = fs.writeFile("index.html","Buffer");
-    response.send(buff.toString());
+    shout = buff.toString();
+    response.send(shout);
 });
 
 var port = process.env.PORT || 5000;
