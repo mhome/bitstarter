@@ -1,4 +1,4 @@
-var buffer = require('buffer');
+//var buffer = require('Buffer');
 var fs =  require('fs');
 var express = require('express');
 
@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   //response.send('Hello World2!');
     var buff = new Buffer(32);
     var shout = new String();
-    buff = fs.readFileSync("index.html","Buffer");
+    buff = fs.readFileSync("index.html");
     shout = buff.toString();
     response.send(shout);
 });
