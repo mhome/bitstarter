@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   //response.send('Hello World2!');
     var buff = new Buffer(32);
     var shout = new String();
-    buff = fs.writeFile("index.html","Buffer");
+    buff = fs.readFileSync("index.html","Buffer");
     shout = buff.toString();
     response.send(shout);
 });
